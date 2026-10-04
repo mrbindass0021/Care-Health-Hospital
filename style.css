@@ -1,0 +1,278 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111827;
+    border-bottom: 1px solid #273449;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #39ff88;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #39ff88;
+}
+
+.nav-links .contact-btn {
+    background: #39ff88;
+    color: #0b1120;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.nav-links .contact-btn:hover {
+    background: #20df70;
+    color: #0b1120;
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 27px;
+    height: 3px;
+    margin: 5px 0;
+    background: #39ff88;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 5%;
+        min-height: 70px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 25px 5%;
+        background: #111827;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        border-top: 1px solid #273449;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .nav-links .contact-btn {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Search Bar */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-box input {
+    width: 180px;
+    padding: 11px 14px;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    outline: none;
+    background: #0b1120;
+    color: white;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    border-color: #39ff88;
+}
+
+.search-box button {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #39ff88;
+    color: #0b1120;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #20df70;
+    transform: translateY(-2px);
+}
+
+/* Mobile Search */
+@media (max-width: 768px) {
+    .search-box {
+        width: 100%;
+        padding: 12px 5%;
+        background: #111827;
+    }
+
+    .search-box input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .search-box button {
+        white-space: nowrap;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        top: 70px;
+    }
+}
+.container{
+    color:white;
+    align-items: center;
+    padding-left: 10%;
+    padding-top: 10%;
+    width: 10%;
+    height: auto;
+    
+} 
+h1{
+    font-size:400%;
+}
+p{
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    white-space: normal;
+    width: 100%;
+    color: white;
+    padding-left: 10%;
+    font-size: large;
+    
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+/* Book Appointment */
+.appointment-btn {
+    background: #0b7df3;
+    color: white;
+    border: 2px solid #0b7df3;
+}
+
+.appointment-btn:hover {
+    background: #0868cc;
+    border-color: #0868cc;
+    transform: translateY(-2px);
+}
+
+/* Explore Services */
+.services-btn {
+    background: transparent;
+    color: #0b7df3;
+    border: 2px solid #0b7df3;
+ 
+}
+
+.services-btn:hover {
+    background: #0b7df3;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
+   
+   
+
